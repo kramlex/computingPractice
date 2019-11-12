@@ -15,7 +15,7 @@ int main(){
     //
     cout << "Enter dim A: ";
     cin >> n;
-    // Сама матрица, ее определитель
+    // Сама матрица
     vector<vector<double>> matr(n , vector<double>(n));
 
     // Вектор b из уравнения Ax = b , где A - трехдиагональная матрица
@@ -24,8 +24,8 @@ int main(){
     // Массив a (главная диагональ) , массив b(над главной диагональю) , массив c(под главной диагональю)
     vector<double> b(n) , a(n) , c(n-1);
     a[0] = 0;
-    cout << "Enter matrix A(dim=" << n << ") :" << endl;
     // Считываем матрицу
+    cout << "Enter matrix A(dim=" << n << ") :" << endl;
     for(int i = 0; i < n ; i++){
         for(int j = 0; j < n; j++){
             cin >> matr[i][j];
